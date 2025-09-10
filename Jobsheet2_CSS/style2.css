@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-image: url("img/background.jpg"); /* path ke gambar */
+  background-size: cover;       /* gambar menutupi layar penuh */
+  background-repeat: no-repeat; /* tidak diulang */
+  background-attachment: fixed; /* biar tetap saat scroll */
+  background-position: center;  /* posisi gambar di tengah */
+}
+
+
+.container-satu {
+  display: flex;
+  align-items: flex-start;
+  border: 2px solid #999;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  
+  background-image: url("img/artikel.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+/* Urutan kolom dengan order */
+.sidebar-satu { flex: 0 0 180px; order: 1; background: #fef6e4; padding: 10px; }
+.kolom-utama { flex: 1; order: 2; background: #f3f9f1; padding: 0 20px; text-align: justify; }
+.sidebar-dua { flex: 0 0 180px; order: 3; background: #e9f0ff; padding: 10px; }
+
+.kolom-utama h2 { margin-top: 0; margin-bottom: 15px; }
+
+.sidebar-satu h3, .sidebar-dua h3 { margin-top: 0; }
+
+/* Sidebar satu: daftar link */
+.sidebar-satu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-satu ul li {
+  margin: 5px 0;
+}
+
+.sidebar-satu ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.sidebar-satu ul li a:hover {
+  color: blue;
+}
+
+/* Styling gambar */
+.gambar {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
